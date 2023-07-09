@@ -1,0 +1,14 @@
+<div class="story-section container">
+  <div class="story-tiles">
+    <div class="tiles-item" *ngFor="let item of stories">
+      <div class="story-border">
+        <div class="profile">
+          <img src="{{item.avatar}}" alt="{{item.userName}}">
+        </div>
+      </div>
+      <div class="profile-title">
+        <p class="text-capitalize">{{(item.userName.length>10)? (item.userName | slice:0:10)+'...':(item.userName)}}</p>
+      </div>
+    </div>
+  </div>
+</div>

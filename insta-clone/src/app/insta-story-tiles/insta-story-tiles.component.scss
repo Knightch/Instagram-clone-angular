@@ -1,0 +1,64 @@
+@import "node_modules/bootstrap/scss/mixins";
+@import "src/variable.scss";
+
+.story-section {
+  overflow: hidden;
+  @include media-breakpoint-up(md) {
+    margin-top: 16px;
+    padding: 16px 0px;
+    width: 630px;
+  }
+  .story-tiles {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 16px;
+    overflow-x: auto;
+    .tiles-item {
+      flex: 0 0 auto;
+      .story-border {
+        position: relative;
+        background: linear-gradient(
+          to right,
+          #ffb800,
+          #ff9522,
+          #ff6f40,
+          #ff485c,
+          #ff2079,
+          #fc177d,
+          #f90d82,
+          #f50086,
+          #fd0072,
+          #ff165d,
+          #ff2c47,
+          #ff4031
+        );
+        padding: 3px;
+        border-radius: 50%;
+        .profile {
+          background: #fff;
+          height: 72px;
+          width: 72px;
+          padding: 4px;
+          border-radius: 50%;
+          img {
+            border-radius: 50%;
+            width: 64px;
+            height: 64px;
+          }
+        }
+      }
+      .profile-title {
+        p{
+          letter-spacing: .01em;
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 16px;
+          text-align: center;
+        }
+      }
+    }
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

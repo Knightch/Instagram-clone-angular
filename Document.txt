@@ -4,4 +4,4 @@ Font family
 Components -
   Home
     side-nav-component
-    main-home-component
+    main-screen-component

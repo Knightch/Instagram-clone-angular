@@ -1,0 +1,12 @@
+@import "node_modules/bootstrap/scss/mixins";
+@import "src/variable.scss";
+
+.suggestions-section{
+  // border: 1px solid rebeccapurple;
+  @include media-breakpoint-up(lg){
+    margin-top: 16px;
+    padding: 30px 0px;
+    width: 319px;
+    height: 800px;
+  }
+}

@@ -1,0 +1,16 @@
+@import "node_modules/bootstrap/scss/mixins";
+@import "src/variable.scss";
+
+.main-content{
+  display: flex;
+  justify-content: center;
+  @include media-breakpoint-up(lg){
+    gap: 64px;
+  }
+  .desktop-side-component{
+    display: none;
+    @include media-breakpoint-up(lg){
+      display: block;
+    }
+  }
+}
